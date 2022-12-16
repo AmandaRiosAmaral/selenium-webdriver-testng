@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLogInTestSuite" duration-ms="10746" started-at="2022-12-16T16:05:38 CET" finished-at="2022-12-16T16:05:48 CET">
+  <suite name="NegativeLogInTestSuite" duration-ms="12662" started-at="2022-12-16T16:51:19 CET" finished-at="2022-12-16T16:51:32 CET">
     <groups>
     </groups>
-    <test name="PositiveLogInTest" duration-ms="10746" started-at="2022-12-16T16:05:38 CET" finished-at="2022-12-16T16:05:48 CET">
-      <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@458c1321]" name="setUp" is-config="true" duration-ms="4525" started-at="2022-12-16T16:05:38 CET" finished-at="2022-12-16T16:05:42 CET">
+    <test name="NegativeUsernameTest-CH" duration-ms="5968" started-at="2022-12-16T16:51:19 CET" finished-at="2022-12-16T16:51:25 CET">
+      <class name="com.herokuapp.theinternet.loginpagetests.NegativeLogInTests">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.NegativeLogInTests@2781e022]" name="setUp" is-config="true" duration-ms="2888" started-at="2022-12-16T16:51:19 CET" finished-at="2022-12-16T16:51:22 CET">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,72 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logInTest()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@458c1321]" name="logInTest" duration-ms="5870" started-at="2022-12-16T16:05:42 CET" finished-at="2022-12-16T16:05:48 CET">
+        <test-method status="PASS" signature="negativeTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.herokuapp.theinternet.loginpagetests.NegativeLogInTests@2781e022]" name="negativeTest" duration-ms="2872" started-at="2022-12-16T16:51:22 CET" finished-at="2022-12-16T16:51:25 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@458c1321]" name="tearDown" is-config="true" duration-ms="264" started-at="2022-12-16T16:05:48 CET" finished-at="2022-12-16T16:05:48 CET">
+        </test-method> <!-- negativeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.NegativeLogInTests@2781e022]" name="tearDown" is-config="true" duration-ms="154" started-at="2022-12-16T16:51:25 CET" finished-at="2022-12-16T16:51:25 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.herokuapp.theinternet.loginpagetests.PositiveLogInTests -->
-    </test> <!-- PositiveLogInTest -->
-  </suite> <!-- PositiveLogInTestSuite -->
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.NegativeLogInTests -->
+    </test> <!-- NegativeUsernameTest-CH -->
+    <test name="NegativePasswordTest-CH" duration-ms="5577" started-at="2022-12-16T16:51:26 CET" finished-at="2022-12-16T16:51:32 CET">
+      <class name="com.herokuapp.theinternet.loginpagetests.NegativeLogInTests">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.NegativeLogInTests@7a3d45bd]" name="setUp" is-config="true" duration-ms="1844" started-at="2022-12-16T16:51:26 CET" finished-at="2022-12-16T16:51:28 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="negativeTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.herokuapp.theinternet.loginpagetests.NegativeLogInTests@7a3d45bd]" name="negativeTest" duration-ms="3536" started-at="2022-12-16T16:51:28 CET" finished-at="2022-12-16T16:51:31 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[incorrectPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your password is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.NegativeLogInTests@7a3d45bd]" name="tearDown" is-config="true" duration-ms="188" started-at="2022-12-16T16:51:31 CET" finished-at="2022-12-16T16:51:32 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.NegativeLogInTests -->
+    </test> <!-- NegativePasswordTest-CH -->
+  </suite> <!-- NegativeLogInTestSuite -->
 </testng-results>
