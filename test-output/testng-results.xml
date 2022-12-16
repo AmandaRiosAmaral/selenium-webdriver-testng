@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="PositiveLogInTestSuite" duration-ms="18088" started-at="2022-12-16T15:21:57 CET" finished-at="2022-12-16T15:22:15 CET">
+  <suite name="PositiveLogInTestSuite" duration-ms="10746" started-at="2022-12-16T16:05:38 CET" finished-at="2022-12-16T16:05:48 CET">
     <groups>
     </groups>
-    <test name="PositiveLogInTest" duration-ms="18088" started-at="2022-12-16T15:21:57 CET" finished-at="2022-12-16T15:22:15 CET">
+    <test name="PositiveLogInTest" duration-ms="10746" started-at="2022-12-16T16:05:38 CET" finished-at="2022-12-16T16:05:48 CET">
       <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@305fd85d]" name="setUp" is-config="true" duration-ms="14277" started-at="2022-12-16T15:21:57 CET" finished-at="2022-12-16T15:22:11 CET">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@458c1321]" name="setUp" is-config="true" duration-ms="4525" started-at="2022-12-16T16:05:38 CET" finished-at="2022-12-16T16:05:42 CET">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logInTest()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@305fd85d]" name="logInTest" duration-ms="3550" started-at="2022-12-16T15:22:11 CET" finished-at="2022-12-16T15:22:15 CET">
+        <test-method status="PASS" signature="logInTest()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@458c1321]" name="logInTest" duration-ms="5870" started-at="2022-12-16T16:05:42 CET" finished-at="2022-12-16T16:05:48 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@305fd85d]" name="tearDown" is-config="true" duration-ms="210" started-at="2022-12-16T15:22:15 CET" finished-at="2022-12-16T15:22:15 CET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@458c1321]" name="tearDown" is-config="true" duration-ms="264" started-at="2022-12-16T16:05:48 CET" finished-at="2022-12-16T16:05:48 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,17 +1,15 @@
 package com.herokuapp.theinternet.loginpagetests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.herokuapp.theinternet.base.BaseTest;
+import com.herokuapp.theinternet.base.TestUtilities;
 
-public class PositiveLogInTests extends BaseTest {
+public class PositiveLogInTests extends TestUtilities {
 
 	@Test
 	public void logInTest() {
@@ -30,7 +28,9 @@ public class PositiveLogInTests extends BaseTest {
 		driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-
+		
+		sleep(3000);
+		
 		// push log in button
 		WebElement logInButton = driver.findElement(By.className("radius"));
 		wait.until(ExpectedConditions.elementToBeClickable(logInButton));
