@@ -11,37 +11,9 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class NegativeLogInTests {
+import com.herokuapp.theinternet.base.BaseTest;
 
-	WebDriver driver;
-
-
-	@Parameters({ "browser" })
-	@BeforeMethod
-	private void setUp(@Optional("chrome") String browser) {
-		// Create driver
-		System.out.println("Create driver: " + browser);
-
-		switch (browser) {
-		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-			driver = new ChromeDriver();
-			break;
-
-		case "firefox":
-			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
-			driver = new FirefoxDriver();
-			break;
-
-		default:
-			System.out.println("Do not know how to start: " + browser + ", starting chrome.");
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-			driver = new ChromeDriver();
-			break;
-		}
-		driver.manage().window().maximize();
-	}
-
+public class NegativeLogInTests extends BaseTest {
 
 	@Parameters({ "username", "password", "expectedMessage" })
 	@Test(priority = 1)
@@ -70,11 +42,4 @@ public class NegativeLogInTests {
 						+ expectedErrorMessage + "\nactualErrorMessage: " + actualErrorMessage);
 	}
 
-
-	@AfterMethod
-	private void tearDown() {
-		System.out.println("Close driver");
-		// Close browser
-		driver.quit();
-	}
 }
