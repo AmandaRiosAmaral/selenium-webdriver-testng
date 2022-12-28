@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [NegativeLogInTestSuite]" parallel="tests">
-  <test thread-count="2" name="NegativePasswordTest-CH(failed)" parallel="tests">
-    <parameter name="password" value="incorrectPassword"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="expectedMessage" value="Your password is invalid!"/>
-    <parameter name="username" value="tomsmith"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLogInTestSuite]">
+  <test thread-count="5" name="PositiveLogInTest(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.loginpagetests.NegativeLogInTests">
+      <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
         <methods>
-          <include name="negativeTest"/>
+          <include name="logInTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.loginpagetests.NegativeLogInTests -->
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.PositiveLogInTests -->
     </classes>
-  </test> <!-- NegativePasswordTest-CH(failed) -->
-  <test thread-count="2" name="NegativeUsernameTest-CH(failed)" parallel="tests">
-    <parameter name="password" value="SuperSecretPassword!"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="expectedMessage" value="Your username is invalid!"/>
-    <parameter name="username" value="incorrectUsername"/>
-    <classes>
-      <class name="com.herokuapp.theinternet.loginpagetests.NegativeLogInTests">
-        <methods>
-          <include name="negativeTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.herokuapp.theinternet.loginpagetests.NegativeLogInTests -->
-    </classes>
-  </test> <!-- NegativeUsernameTest-CH(failed) -->
-</suite> <!-- Failed suite [NegativeLogInTestSuite] -->
+  </test> <!-- PositiveLogInTest(failed) -->
+</suite> <!-- Failed suite [PositiveLogInTestSuite] -->
