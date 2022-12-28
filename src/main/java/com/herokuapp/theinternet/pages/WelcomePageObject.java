@@ -11,6 +11,7 @@ public class WelcomePageObject extends BasePageObject {
 	
 	private By formAuthenticationLinkLocator = By.linkText("Form Authentication");
 	private By dropdownLinkLocator = By.linkText("Dropdown");
+	private By javascriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
 
 	public WelcomePageObject(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -30,10 +31,17 @@ public class WelcomePageObject extends BasePageObject {
 		return new LoginPage(driver, log);
 	}
 
-	/** open Dropdown Page by clicking on Dropdown link */
+	/** open DropdownPage by clicking on Dropdown link */
 	public DropdownPage clickDropdownLink() {
 		log.info("Clicking Dropdown");
 		click(dropdownLinkLocator);
 		return new DropdownPage(driver, log);
+	}
+	
+	/** open JavaScriptAlertsPage by clicking on JavaScript Alerts link */
+	public JavaScriptAlertsPage clickJavaScriptAlertsLink() {
+		log.info("Clicking JavaScript Alerts");
+		click(javascriptAlertsLinkLocator);
+		return new JavaScriptAlertsPage(driver, log);
 	}
 }
