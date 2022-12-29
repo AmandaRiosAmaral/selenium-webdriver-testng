@@ -44,6 +44,6 @@ public class KeyPressesTests extends TestUtilities {
 
 		// Verify Result text is expected
 		Assert.assertTrue(result.equals("You entered: SPACE"),
-				"result is not expected. \nShould be 'You entered: ENTER', but it is '" + result + "'");
+				"result is not expected. \nShould be 'You entered: SPACE', but it is '" + result + "'");
 	}
 }
