@@ -93,21 +93,21 @@ public class AlertsTests extends TestUtilities {
 		alertsPage.openJSPrompt();
 		sleep(1000);
 		// Get alert text
-		String alertMessage = alertsPage.getAlertText() + "[FAIL]";
+		String alertMessage = alertsPage.getAlertText();
 
 		// Type text into alert
 		alertsPage.typeTextIntoAlert("Hello Alert, it's Amanda here");
 		sleep(1000);
 		// Get Results text
-		String result = alertsPage.getResultText() + "[FAIL]";
+		String result = alertsPage.getResultText();
 		sleep(1000);
 		// Verifications
 		// 1 - Alert text is expected
-		softAssert.assertTrue(alertMessage.equals("I am a JS prompt[FAIL]"),
+		softAssert.assertTrue(alertMessage.equals("I am a JS prompt"),
 				"Alert message is not expected. \nShould be 'I am a JS prompt', but it is '" + alertMessage + "'");
 
 		// 2 - Result text is expected
-		softAssert.assertTrue(result.equals("You entered: Hello Alert, it's Amanda here[FAIL]"),
+		softAssert.assertTrue(result.equals("You entered: Hello Alert, it's Amanda here"),
 				"result is not expected. \nShould be 'You entered: Hello Alert, it's Amanda here', but it is '" + result
 						+ "'");
 		softAssert.assertAll();
