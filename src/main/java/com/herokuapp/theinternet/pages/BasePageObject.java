@@ -112,6 +112,23 @@ public class BasePageObject {
 		return driver.switchTo().alert();
 	}
 
+	public void switchToWindowWithTitle(String expectedTitle) {
+		// Switching to new window
+		String firstWindow = driver.getWindowHandle();
+
+		Set<String> allWindows = driver.getWindowHandles();
+		Iterator<String> windowsIterator = allWindows.iterator();
+
+		while (windowsIterator.hasNext()) {
+			String windowHandle = windowsIterator.next().toString();
+			if (!windowHandle.equals(firstWindow)) {
+				driver.switchTo().window(windowHandle);
+				if (getCurrentPageTitle().equals(expectedTitle)) {
+					break;
+				}
+			}
+		}
+	}
 	
 	
 }
