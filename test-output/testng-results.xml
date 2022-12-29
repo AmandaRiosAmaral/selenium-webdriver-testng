@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="WindowsTestSuite" duration-ms="8754" started-at="2022-12-29T13:19:02 CET" finished-at="2022-12-29T13:19:10 CET">
+  <suite name="EditorTestSuite" duration-ms="19038" started-at="2022-12-29T13:25:15 CET" finished-at="2022-12-29T13:25:34 CET">
     <groups>
     </groups>
-    <test name="WindowsTests" duration-ms="8754" started-at="2022-12-29T13:19:02 CET" finished-at="2022-12-29T13:19:10 CET">
-      <class name="com.herokuapp.theinternet.windowstests.WindowsTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.windowstests.WindowsTests@4232c52b]" name="setUp" is-config="true" duration-ms="5753" started-at="2022-12-29T13:19:02 CET" finished-at="2022-12-29T13:19:08 CET">
+    <test name="EditorTests" duration-ms="19038" started-at="2022-12-29T13:25:15 CET" finished-at="2022-12-29T13:25:34 CET">
+      <class name="com.herokuapp.theinternet.editortests.EditorTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.editortests.EditorTests@4232c52b]" name="setUp" is-config="true" duration-ms="5461" started-at="2022-12-29T13:25:15 CET" finished-at="2022-12-29T13:25:20 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.herokuapp.theinternet.windowstests.WindowsTests.newWindowTest()]]>
+                <![CDATA[public void com.herokuapp.theinternet.editortests.EditorTests.defaultEditorValueTest()]]>
               </value>
             </param>
             <param index="1">
@@ -21,22 +21,22 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@7e22550a]]>
+                <![CDATA[org.testng.TestRunner@3542162a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="newWindowTest()[pri:0, instance:com.herokuapp.theinternet.windowstests.WindowsTests@4232c52b]" name="newWindowTest" duration-ms="2713" started-at="2022-12-29T13:19:08 CET" finished-at="2022-12-29T13:19:10 CET">
+        <test-method status="PASS" signature="defaultEditorValueTest()[pri:0, instance:com.herokuapp.theinternet.editortests.EditorTests@4232c52b]" name="defaultEditorValueTest" duration-ms="13286" started-at="2022-12-29T13:25:20 CET" finished-at="2022-12-29T13:25:33 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newWindowTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.windowstests.WindowsTests@4232c52b]" name="tearDown" is-config="true" duration-ms="202" started-at="2022-12-29T13:19:10 CET" finished-at="2022-12-29T13:19:10 CET">
+        </test-method> <!-- defaultEditorValueTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.editortests.EditorTests@4232c52b]" name="tearDown" is-config="true" duration-ms="228" started-at="2022-12-29T13:25:33 CET" finished-at="2022-12-29T13:25:34 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.herokuapp.theinternet.windowstests.WindowsTests -->
-    </test> <!-- WindowsTests -->
-  </suite> <!-- WindowsTestSuite -->
+      </class> <!-- com.herokuapp.theinternet.editortests.EditorTests -->
+    </test> <!-- EditorTests -->
+  </suite> <!-- EditorTestSuite -->
 </testng-results>
