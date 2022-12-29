@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="DragAndDropTestSuite" duration-ms="10076" started-at="2022-12-29T15:00:44 CET" finished-at="2022-12-29T15:00:54 CET">
+  <suite name="UploadTestSuite" duration-ms="16828" started-at="2022-12-29T15:27:50 CET" finished-at="2022-12-29T15:28:07 CET">
     <groups>
     </groups>
-    <test name="DragAndDropTests-CH" duration-ms="5921" started-at="2022-12-29T15:00:44 CET" finished-at="2022-12-29T15:00:50 CET">
-      <class name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.draganddroptests.DragAndDropTests@305fd85d]" name="setUp" is-config="true" duration-ms="3971" started-at="2022-12-29T15:00:44 CET" finished-at="2022-12-29T15:00:48 CET">
+    <test name="UploadTests" duration-ms="16828" started-at="2022-12-29T15:27:50 CET" finished-at="2022-12-29T15:28:07 CET">
+      <class name="com.herokuapp.theinternet.uploadtests.UploadTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="setUp" is-config="true" duration-ms="5640" started-at="2022-12-29T15:27:50 CET" finished-at="2022-12-29T15:27:56 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.herokuapp.theinternet.draganddroptests.DragAndDropTests.dragAToBTest()]]>
+                <![CDATA[public void com.herokuapp.theinternet.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
               </value>
             </param>
             <param index="1">
@@ -21,30 +21,38 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@556d0826]]>
+                <![CDATA[org.testng.TestRunner@41fe9859]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dragAToBTest()[pri:0, instance:com.herokuapp.theinternet.draganddroptests.DragAndDropTests@305fd85d]" name="dragAToBTest" duration-ms="1692" started-at="2022-12-29T15:00:48 CET" finished-at="2022-12-29T15:00:50 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dragAToBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.draganddroptests.DragAndDropTests@305fd85d]" name="tearDown" is-config="true" duration-ms="197" started-at="2022-12-29T15:00:50 CET" finished-at="2022-12-29T15:00:50 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.herokuapp.theinternet.draganddroptests.DragAndDropTests -->
-    </test> <!-- DragAndDropTests-CH -->
-    <test name="DragAndDropTests-FF" duration-ms="4124" started-at="2022-12-29T15:00:50 CET" finished-at="2022-12-29T15:00:54 CET">
-      <class name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.draganddroptests.DragAndDropTests@a38d7a3]" name="setUp" is-config="true" duration-ms="2548" started-at="2022-12-29T15:00:50 CET" finished-at="2022-12-29T15:00:53 CET">
+        <test-method status="PASS" signature="fileUploadTest(int,java.lang.String)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="fileUploadTest" duration-ms="1794" started-at="2022-12-29T15:27:56 CET" data-provider="files" finished-at="2022-12-29T15:27:58 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.herokuapp.theinternet.draganddroptests.DragAndDropTests.dragAToBTest()]]>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[index.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="tearDown" is-config="true" duration-ms="160" started-at="2022-12-29T15:27:58 CET" finished-at="2022-12-29T15:27:58 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="setUp" is-config="true" duration-ms="2158" started-at="2022-12-29T15:27:58 CET" finished-at="2022-12-29T15:28:00 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
               </value>
             </param>
             <param index="1">
@@ -54,22 +62,75 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@66ce957f]]>
+                <![CDATA[org.testng.TestRunner@41fe9859]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dragAToBTest()[pri:0, instance:com.herokuapp.theinternet.draganddroptests.DragAndDropTests@a38d7a3]" name="dragAToBTest" duration-ms="1405" started-at="2022-12-29T15:00:53 CET" finished-at="2022-12-29T15:00:54 CET">
+        <test-method status="PASS" signature="fileUploadTest(int,java.lang.String)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="fileUploadTest" duration-ms="3140" started-at="2022-12-29T15:28:00 CET" data-provider="files" finished-at="2022-12-29T15:28:03 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[logo.png]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAToBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.draganddroptests.DragAndDropTests@a38d7a3]" name="tearDown" is-config="true" duration-ms="159" started-at="2022-12-29T15:00:54 CET" finished-at="2022-12-29T15:00:54 CET">
+        </test-method> <!-- fileUploadTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="tearDown" is-config="true" duration-ms="182" started-at="2022-12-29T15:28:03 CET" finished-at="2022-12-29T15:28:03 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.herokuapp.theinternet.draganddroptests.DragAndDropTests -->
-    </test> <!-- DragAndDropTests-FF -->
-  </suite> <!-- DragAndDropTestSuite -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="setUp" is-config="true" duration-ms="2006" started-at="2022-12-29T15:28:03 CET" finished-at="2022-12-29T15:28:05 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@41fe9859]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="fileUploadTest(int,java.lang.String)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="fileUploadTest" duration-ms="1524" started-at="2022-12-29T15:28:05 CET" data-provider="files" finished-at="2022-12-29T15:28:07 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[text.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@528931cf]" name="tearDown" is-config="true" duration-ms="154" started-at="2022-12-29T15:28:07 CET" finished-at="2022-12-29T15:28:07 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.herokuapp.theinternet.uploadtests.UploadTests -->
+    </test> <!-- UploadTests -->
+  </suite> <!-- UploadTestSuite -->
 </testng-results>
