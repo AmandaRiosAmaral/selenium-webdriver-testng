@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AlertsTestSuite" duration-ms="22219" started-at="2022-12-29T15:48:00 CET" finished-at="2022-12-29T15:48:22 CET">
+  <suite name="PositiveLogInTestSuite" duration-ms="7052" started-at="2022-12-29T16:10:32 CET" finished-at="2022-12-29T16:10:39 CET">
     <groups>
     </groups>
-    <test name="AlertsTests" duration-ms="22219" started-at="2022-12-29T15:48:00 CET" finished-at="2022-12-29T15:48:22 CET">
-      <class name="com.herokuapp.theinternet.alertstests.AlertsTests">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="setUp" is-config="true" duration-ms="5451" started-at="2022-12-29T15:48:00 CET" finished-at="2022-12-29T15:48:05 CET">
+    <test name="PositiveLogInTest" duration-ms="7052" started-at="2022-12-29T16:10:32 CET" finished-at="2022-12-29T16:10:39 CET">
+      <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@1563da5]" name="setUp" is-config="true" duration-ms="3867" started-at="2022-12-29T16:10:32 CET" finished-at="2022-12-29T16:10:36 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.herokuapp.theinternet.alertstests.AlertsTests.jsAlertTest()]]>
+                <![CDATA[public void com.herokuapp.theinternet.loginpagetests.PositiveLogInTests.logInTest()]]>
               </value>
             </param>
             <param index="1">
@@ -21,80 +21,22 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@495083a0]]>
+                <![CDATA[org.testng.TestRunner@3d484181]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsAlertTest()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="jsAlertTest" duration-ms="3767" started-at="2022-12-29T15:48:05 CET" finished-at="2022-12-29T15:48:09 CET">
+        <test-method status="PASS" signature="logInTest()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@1563da5]" name="logInTest" duration-ms="2899" started-at="2022-12-29T16:10:36 CET" finished-at="2022-12-29T16:10:39 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsAlertTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="tearDown" is-config="true" duration-ms="179" started-at="2022-12-29T15:48:09 CET" finished-at="2022-12-29T15:48:09 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="setUp" is-config="true" duration-ms="2065" started-at="2022-12-29T15:48:09 CET" finished-at="2022-12-29T15:48:11 CET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.herokuapp.theinternet.alertstests.AlertsTests.jsDismissTest()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@495083a0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsDismissTest()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="jsDismissTest" duration-ms="3739" started-at="2022-12-29T15:48:11 CET" finished-at="2022-12-29T15:48:15 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jsDismissTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="tearDown" is-config="true" duration-ms="168" started-at="2022-12-29T15:48:15 CET" finished-at="2022-12-29T15:48:15 CET">
+        </test-method> <!-- logInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@1563da5]" name="tearDown" is-config="true" duration-ms="230" started-at="2022-12-29T16:10:39 CET" finished-at="2022-12-29T16:10:39 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="setUp" is-config="true" duration-ms="2076" started-at="2022-12-29T15:48:15 CET" finished-at="2022-12-29T15:48:17 CET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.herokuapp.theinternet.alertstests.AlertsTests.jsPromptTest()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@495083a0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="jsPromptTest()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="jsPromptTest" duration-ms="4549" started-at="2022-12-29T15:48:17 CET" finished-at="2022-12-29T15:48:22 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jsPromptTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@528931cf]" name="tearDown" is-config="true" duration-ms="165" started-at="2022-12-29T15:48:22 CET" finished-at="2022-12-29T15:48:22 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.herokuapp.theinternet.alertstests.AlertsTests -->
-    </test> <!-- AlertsTests -->
-  </suite> <!-- AlertsTestSuite -->
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.PositiveLogInTests -->
+    </test> <!-- PositiveLogInTest -->
+  </suite> <!-- PositiveLogInTestSuite -->
 </testng-results>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [DragAndDropTestSuite]">
-  <test thread-count="5" name="DragAndDropTests-FF(failed)">
-    <parameter name="browser" value="chromes"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PositiveLogInTestSuite]">
+  <test thread-count="5" name="PositiveLogInTest(failed)">
     <classes>
-      <class name="com.herokuapp.theinternet.draganddroptests.DragAndDropTests">
+      <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
         <methods>
+          <include name="logInTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="dragAToBTest"/>
         </methods>
-      </class> <!-- com.herokuapp.theinternet.draganddroptests.DragAndDropTests -->
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.PositiveLogInTests -->
     </classes>
-  </test> <!-- DragAndDropTests-FF(failed) -->
-</suite> <!-- Failed suite [DragAndDropTestSuite] -->
+  </test> <!-- PositiveLogInTest(failed) -->
+</suite> <!-- Failed suite [PositiveLogInTestSuite] -->

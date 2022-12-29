@@ -15,6 +15,10 @@ public class BaseTest {
 
 	protected WebDriver driver;
 	protected Logger log;
+	
+	protected String testSuiteName;
+	protected String testName;
+	protected String testMethodName;
 
 	@Parameters({ "browser" })
 	@BeforeMethod(alwaysRun = true)
@@ -24,6 +28,10 @@ public class BaseTest {
 		
 		BrowserDriverFactory factory = new BrowserDriverFactory(browser, log);
 		driver = factory.createDriver();
+		
+		this.testSuiteName = ctx.getSuite().getName();
+		this.testName = testName;
+		this.testMethodName = method.getName();
 	}
 
 	@AfterMethod(alwaysRun = true)
