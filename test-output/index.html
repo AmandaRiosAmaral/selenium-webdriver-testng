@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-PositiveLogInTestSuite">
-              <span class="suite-name border-passed">PositiveLogInTestSuite</span>
+            <a href="#" class="navigator-link" panel-name="suite-JSErrorTestSuite">
+              <span class="suite-name border-failed">JSErrorTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-PositiveLogInTestSuite">
-                    <span>PositiveTests.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-JSErrorTestSuite">
+                    <span>JSErrorTestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-PositiveLogInTestSuite">
+                  <a href="#" class="navigator-link " panel-name="testlist-JSErrorTestSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-PositiveLogInTestSuite">
+                  <a href="#" class="navigator-link " panel-name="group-JSErrorTestSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-PositiveLogInTestSuite">
+                  <a href="#" class="navigator-link " panel-name="times-JSErrorTestSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-PositiveLogInTestSuite">
+                  <a href="#" class="navigator-link " panel-name="reporter-JSErrorTestSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-PositiveLogInTestSuite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-JSErrorTestSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-PositiveLogInTestSuite">
+                  <a href="#" class="navigator-link " panel-name="chronological-JSErrorTestSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-PositiveLogInTestSuite" class="hide-methods passed suite-PositiveLogInTestSuite"> (hide)</a> <!-- hide-methods passed suite-PositiveLogInTestSuite -->
-                      <a href="#" panel-name="suite-PositiveLogInTestSuite" class="show-methods passed suite-PositiveLogInTestSuite"> (show)</a> <!-- show-methods passed suite-PositiveLogInTestSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-JSErrorTestSuite" class="hide-methods failed suite-JSErrorTestSuite"> (hide)</a> <!-- hide-methods failed suite-JSErrorTestSuite -->
+                      <a href="#" panel-name="suite-JSErrorTestSuite" class="show-methods failed suite-JSErrorTestSuite"> (show)</a> <!-- show-methods failed suite-JSErrorTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-PositiveLogInTestSuite">
+                    <div class="method-list-content failed suite-JSErrorTestSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-PositiveLogInTestSuite" title="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests" hash-for-method="logInTest">logInTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-JSErrorTestSuite" title="com.herokuapp.theinternet.jserrortests.JSErrorTests" hash-for-method="jsErrorTest">jsErrorTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-PositiveLogInTestSuite -->
+                    </div> <!-- method-list-content failed suite-JSErrorTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,69 +118,75 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-PositiveLogInTestSuite" class="panel PositiveLogInTestSuite">
-          <div class="suite-PositiveLogInTestSuite-class-passed">
+        <div panel-name="suite-JSErrorTestSuite" class="panel JSErrorTestSuite">
+          <div class="suite-JSErrorTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.herokuapp.theinternet.loginpagetests.PositiveLogInTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.herokuapp.theinternet.jserrortests.JSErrorTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logInTest">
-                  </a> <!-- logInTest -->
-                  <span class="method-name">logInTest</span>
+                  <a name="jsErrorTest">
+                  </a> <!-- jsErrorTest -->
+                  <span class="method-name">jsErrorTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Severe error: http://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading &apos;xyz&apos;)
+	at com.herokuapp.theinternet.jserrortests.JSErrorTests.jsErrorTest(JSErrorTests.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PositiveLogInTestSuite-class-passed -->
-        </div> <!-- panel PositiveLogInTestSuite -->
-        <div panel-name="test-xml-PositiveLogInTestSuite" class="panel">
+          </div> <!-- suite-JSErrorTestSuite-class-failed -->
+        </div> <!-- panel JSErrorTestSuite -->
+        <div panel-name="test-xml-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/amandarios/Documents/selenium-webdriver-testng/src/test/resources/TestSuites/PositiveTests.xml</span>
+            <span class="header-content">/Users/amandarios/Documents/selenium-webdriver-testng/src/test/resources/TestSuites/JSErrorTestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PositiveLogInTestSuite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;PositiveLogInTest&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;JSErrorTestSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;JSErrorTests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.herokuapp.theinternet.loginpagetests.PositiveLogInTests&quot;/&gt;
+      &lt;class name=&quot;com.herokuapp.theinternet.jserrortests.JSErrorTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- PositiveLogInTest --&gt;
-&lt;/suite&gt; &lt;!-- PositiveLogInTestSuite --&gt;
+  &lt;/test&gt; &lt;!-- JSErrorTests --&gt;
+&lt;/suite&gt; &lt;!-- JSErrorTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-PositiveLogInTestSuite" class="panel">
+        <div panel-name="testlist-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for PositiveLogInTestSuite</span>
+            <span class="header-content">Tests for JSErrorTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PositiveLogInTest (1 class)</span>
+                <span class="test-name">JSErrorTests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-PositiveLogInTestSuite" class="panel">
+        <div panel-name="group-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for PositiveLogInTestSuite</span>
+            <span class="header-content">Groups for JSErrorTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-PositiveLogInTestSuite" class="panel">
+        <div panel-name="times-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for PositiveLogInTestSuite</span>
+            <span class="header-content">Times for JSErrorTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_PositiveLogInTestSuite');
-function tableData_PositiveLogInTestSuite() {
+suiteTableInitFunctions.push('tableData_JSErrorTestSuite');
+function tableData_JSErrorTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -188,51 +194,53 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logInTest')
-data.setCell(0, 2, 'com.herokuapp.theinternet.loginpagetests.PositiveLogInTests')
-data.setCell(0, 3, 2899);
-window.suiteTableData['PositiveLogInTestSuite']= { tableData: data, tableDiv: 'times-div-PositiveLogInTestSuite'}
+data.setCell(0, 1, 'jsErrorTest')
+data.setCell(0, 2, 'com.herokuapp.theinternet.jserrortests.JSErrorTests')
+data.setCell(0, 3, 403);
+window.suiteTableData['JSErrorTestSuite']= { tableData: data, tableDiv: 'times-div-JSErrorTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-PositiveLogInTestSuite">
-              </div> <!-- times-div-PositiveLogInTestSuite -->
+              <span class="suite-total-time">Total running time: 403 ms</span>
+              <div id="times-div-JSErrorTestSuite">
+              </div> <!-- times-div-JSErrorTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-PositiveLogInTestSuite" class="panel">
+        <div panel-name="reporter-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for PositiveLogInTestSuite</span>
+            <span class="header-content">Reporter output for JSErrorTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-PositiveLogInTestSuite" class="panel">
+        <div panel-name="ignored-methods-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-PositiveLogInTestSuite" class="panel">
+        <div panel-name="chronological-JSErrorTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.herokuapp.theinternet.loginpagetests.PositiveLogInTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.herokuapp.theinternet.jserrortests.JSErrorTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.herokuapp.theinternet.loginpagetests.PositiveLogInTests.logInTest(), chrome, org.tes...)</span>
+                <span class="method-name">setUp(public void com.herokuapp.theinternet.jserrortests.JSErrorTests.jsErrorTest(), chrome, org.testng.Te...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">logInTest</span>
-                <span class="method-start">3870 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">jsErrorTest</span>
+                <span class="method-start">5484 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6771 ms</span>
+                <span class="method-start">5902 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

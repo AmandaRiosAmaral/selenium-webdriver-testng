@@ -8,11 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">PositiveLogInTestSuite</th></tr>
-<tr><td><a href="#t0">PositiveLogInTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,052</td><td></td><td></td></tr>
+<tr><th colspan="8">JSErrorTestSuite</th></tr>
+<tr><td><a href="#t0">JSErrorTests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,130</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PositiveLogInTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PositiveLogInTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.herokuapp.theinternet.loginpagetests.PositiveLogInTests</td><td><a href="#m0">logInTest</a></td><td rowspan="1">1672326636400</td><td rowspan="1">2899</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">JSErrorTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">JSErrorTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.herokuapp.theinternet.jserrortests.JSErrorTests</td><td><a href="#m0">jsErrorTest</a></td><td rowspan="1">1672404595170</td><td rowspan="1">403</td></tr></tbody>
 </table>
-<h2>PositiveLogInTest</h2><h3 id="m0">com.herokuapp.theinternet.loginpagetests.PositiveLogInTests#logInTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>JSErrorTests</h2><h3 id="m0">com.herokuapp.theinternet.jserrortests.JSErrorTests#jsErrorTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Severe error: http://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading &apos;xyz&apos;)
+	at com.herokuapp.theinternet.jserrortests.JSErrorTests.jsErrorTest(JSErrorTests.java:32)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
